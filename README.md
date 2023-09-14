@@ -12,4 +12,8 @@ Nest.js is a modern, scalable, and powerful framework for building server-side a
 
 6. Middleware Pattern: The Middleware pattern is used in Nest.js to handle requests and responses. It allows you to add functionality to the request/response pipeline of your application.
 
+7. Strategy Pattern: The Strategy Pattern is a behavioral design pattern that allows you to define a family of algorithms, encapsulate each one as an object, and make them interchangeable at runtime. It is useful when you need to implement different variations of an algorithm and want to choose which variation to use at runtime.
+    In the context of Nest.js, you might use the Strategy Pattern to implement different algorithms for a particular task, such as payment processing. For example, you might have different payment methods available such as credit card, PayPal, or Stripe, each with their own unique algorithms for processing payments.
+    To implement the Strategy Pattern in Nest.js, you would typically define an interface or abstract class that defines the contract for the algorithms, and then implement concrete classes that implement that interface or extend that abstract class. You would then define a context class that uses the interface or abstract class to delegate to the concrete classes at runtime.
+
 These patterns are used extensively in Nest.js and are the building blocks of most Nest.js applications. They help to make the code modular, maintainable, and scalable.
